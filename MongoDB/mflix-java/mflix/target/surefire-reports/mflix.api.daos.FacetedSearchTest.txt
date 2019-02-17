@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.FacetedSearchTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 5.212 s <<< FAILURE! - in mflix.api.daos.FacetedSearchTest
+testRatingRuntimeBuckets(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0.725 s  <<< ERROR!
+java.lang.NullPointerException
+	at mflix.api.daos.FacetedSearchTest.testRatingRuntimeBuckets(FacetedSearchTest.java:49)
+
+testFacetedSearchPaging(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0.126 s  <<< FAILURE!
+java.lang.AssertionError: Should return a list of one faceted document expected:<1> but was:<51>
+	at mflix.api.daos.FacetedSearchTest.testFacetedSearchPaging(FacetedSearchTest.java:71)
+
+testFacetedMultipleCast(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0.141 s  <<< FAILURE!
+java.lang.AssertionError: Should return a list of one faceted document expected:<1> but was:<89>
+	at mflix.api.daos.FacetedSearchTest.testFacetedMultipleCast(FacetedSearchTest.java:99)
+

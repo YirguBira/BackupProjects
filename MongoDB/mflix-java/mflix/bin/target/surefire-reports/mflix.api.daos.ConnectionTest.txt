@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.ConnectionTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 6.043 s <<< FAILURE! - in mflix.api.daos.ConnectionTest
+testMoviesCount(mflix.api.daos.ConnectionTest)  Time elapsed: 0.5 s  <<< ERROR!
+com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='m220student', source='admin', password=<hidden>, mechanismProperties={}}
+	at mflix.api.daos.ConnectionTest.testMoviesCount(ConnectionTest.java:44)
+Caused by: com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'bad auth Authentication failed.' on server mflix-shard-00-00-qf16j.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "bad auth Authentication failed.", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.api.daos.ConnectionTest.testMoviesCount(ConnectionTest.java:44)
+
+testConnectionFindsCollections(mflix.api.daos.ConnectionTest)  Time elapsed: 0.675 s  <<< ERROR!
+com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='m220student', source='admin', password=<hidden>, mechanismProperties={}}
+	at mflix.api.daos.ConnectionTest.testConnectionFindsCollections(ConnectionTest.java:72)
+Caused by: com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'bad auth Authentication failed.' on server mflix-shard-00-00-qf16j.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "bad auth Authentication failed.", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.api.daos.ConnectionTest.testConnectionFindsCollections(ConnectionTest.java:72)
+
+testConnectionFindsDatabase(mflix.api.daos.ConnectionTest)  Time elapsed: 0.619 s  <<< ERROR!
+com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='m220student', source='admin', password=<hidden>, mechanismProperties={}}
+	at mflix.api.daos.ConnectionTest.testConnectionFindsDatabase(ConnectionTest.java:53)
+Caused by: com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'bad auth Authentication failed.' on server mflix-shard-00-00-qf16j.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "bad auth Authentication failed.", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.api.daos.ConnectionTest.testConnectionFindsDatabase(ConnectionTest.java:53)
+
